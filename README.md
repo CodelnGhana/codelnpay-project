@@ -2,7 +2,7 @@
 
 ## About The Project
 
-#### Codelnpay is a Payment Solution that helps recruiters manage payments to remote engineers and freelancers across Africa 
+#### CodelnPay is a Payment Solution that helps recruiters manage cross-border payments to remote engineers and freelancers across Africa 
 
 
 <!-- ABOUT THE PROJECT -->
