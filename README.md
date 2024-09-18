@@ -4,8 +4,8 @@
 
 #### Codeln Pay is a crypto payroll payment solution designed to facilitate cross-border transactions for businesses and remote workers. 
 #### With robust security features, Codeln Pay ensures that all transactions are encrypted and protected, giving users peace of mind. 
-##### Payments are delivered instantly and at an affordable charge. 
-##### Key features include support for multiple payment methods, including digital wallet, credit cards, and bank transfers. 
+#### Payments are delivered instantly and at an affordable charge. 
+#### Key features include support for multiple payment methods, including digital wallet, credit cards, and bank transfers. 
 
 <!-- ABOUT THE PROJECT -->
 
