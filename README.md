@@ -45,7 +45,7 @@
 
 Codeln Team - [@Codeln_spaces](https://twitter.com/Codeln_spaces) -  info@codeln.com
 
-
+<!-- NOTE -->
 ### Note: 
  CodelnPay handles sensitive data not limited to like customer information, financial records, or personal details, 
  privacy is crucial hence the project maintains private code repositories.
