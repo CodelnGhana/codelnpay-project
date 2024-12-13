@@ -2,8 +2,19 @@
 
 ### Note for SDF:
 
-CodelnPay handles sensitive data including but not limited to customer information, financial records, or personal
-details, hence the project maintains private code repositories.
+Due to the nature of data that CodelnPay being sensitive data including but not limited to customer information, 
+financial records, or personal details, hence the Codeln Organisation maintains private code repositories. 
+
+CodelnPay Frontend Code has been included in the project to demonstrate project development progress. 
+However the main organisation repos are listed below, feel free to request access.
+
+* [CodelnPay Backend Repo](https://github.com/Philisiah/codelnpay.git)
+* [CodelnPay Frontend Repo](https://github.com/Philisiah/beer.git)
+
+Additionally, here are the links to the main Codeln HR product and CodelnPay product.
+
+* [Codeln Technologies](https://www.codeln.com)
+* [Codeln Pay](https://pay.codeln.com)
 
 Use this email [info@codeln.com] above to contact us for further details.
 
@@ -51,6 +62,8 @@ Use this email [info@codeln.com] above to contact us for further details.
 [Django.org]: https://static.djangoproject.com/img/logos/django-logo-positive.png
 
 [Django-url]:  https://www.djangoproject.com
+[frontend-repo]:  https://github.com/Philisiah/beer.git
+[backend-repo]:  https://github.com/Philisiah/codelnpay.git
 
 [product-screenshot]: images/screenshot.png
 
