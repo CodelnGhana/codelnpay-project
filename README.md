@@ -1,9 +1,9 @@
 ## CodelnPay
 
-### Note for SDF:
+### Note for SCF:
 
-Due to the nature of data that CodelnPay being sensitive data including but not limited to customer information, 
-financial records, or personal details, hence the Codeln Organisation maintains private code repositories. 
+Due to the nature of the data that CodelnPay handles, being sensitive data including but not limited to customer information, 
+financial records, or personal identifier information, the Codeln Organisation maintains private code repositories. 
 
 CodelnPay Frontend Code has been included in the project to demonstrate project development progress. 
 However the main organisation repos are listed below, feel free to request access.
@@ -11,9 +11,8 @@ However the main organisation repos are listed below, feel free to request acces
 * [CodelnPay Backend Repo](https://github.com/Philisiah/codelnpay.git)
 * [CodelnPay Frontend Repo](https://github.com/Philisiah/beer.git)
 
-Additionally, here are the links to the main Codeln HR product and CodelnPay product.
+Additionally, here are the links to the CodelnPay product.
 
-* [Codeln Technologies](https://www.codeln.com)
 * [Codeln Pay](https://pay.codeln.com)
 
 Use this email [info@codeln.com] above to contact us for further details.
@@ -65,7 +64,7 @@ Use this email [info@codeln.com] above to contact us for further details.
 [frontend-repo]:  https://github.com/Philisiah/beer.git
 [backend-repo]:  https://github.com/Philisiah/codelnpay.git
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/product_screenshot.png
 
 
 
