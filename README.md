@@ -6,10 +6,15 @@ Due to the nature of the data that CodelnPay handles, being sensitive data inclu
 financial records, or personal identifier information, the Codeln Organisation maintains private code repositories. 
 
 CodelnPay Frontend Code has been included in the project to demonstrate project development progress. 
-However the main organisation repos are listed below, feel free to request access.
+However the backend repo is shown  below.
+You can request access using the following email : philisiah@codeln.com.
 
-* [CodelnPay Backend Repo](https://github.com/Philisiah/codelnpay.git)
-* [CodelnPay Frontend Repo](https://github.com/Philisiah/beer.git)
+### CodelnPay Architechture
+
+
+![CodelnPay-Architechture-Diagram]
+### Backend Repo Image
+![backend-repo-image]
 
 Additionally, here are the links to the CodelnPay product.
 
@@ -38,6 +43,22 @@ Use this email [info@codeln.com] above to contact us for further details.
 * [![Angular][Angular.io]][Angular-url]
 * <a href="https://www.djangoproject.com"><img src="https://static.djangoproject.com/img/logos/django-logo-positive.png" height="40"></img></a>
 
+```mermaid
+classDiagram
+    class CodelnPay Frontend  {
+        - Vue
+        - Vite
+        - Axios
+    }
+
+    class CodelnPay Backend {
+        - Django
+        - Postgresql
+        
+    }
+
+    CodelnPay Frontend "Uses" -- CodelnPay Backend 
+```
 ### Backed By
 
 * <a href="https://stellar.org/"><img src="images/stellar.png"></img></a>
@@ -61,8 +82,8 @@ Use this email [info@codeln.com] above to contact us for further details.
 [Django.org]: https://static.djangoproject.com/img/logos/django-logo-positive.png
 
 [Django-url]:  https://www.djangoproject.com
-[frontend-repo]:  https://github.com/Philisiah/beer.git
-[backend-repo]:  https://github.com/Philisiah/codelnpay.git
+[CodelnPay-Architechture-Diagram]:  images/product_screenshot.png
+[backend-repo-image]: images/backend_repo_image.png
 
 [product-screenshot]: images/product_screenshot.png
 
