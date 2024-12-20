@@ -10,9 +10,30 @@ However the backend repo is shown  below.
 You can request access using the following email : philisiah@codeln.com.
 
 ### CodelnPay Architechture
+```mermaid
+architecture-beta
+    group codelnpay(cloud)[CODELNPAY] 
+    group api(cloud)[API] in codelnpay
 
+    service db(database)[Database] in api
+    service disk1(disk)[Storage] in api
+    service server(server)[Server] in api
 
-![CodelnPay-Architechture-Diagram]
+    db:L -- R:server
+    disk1:T -- B:db
+    
+
+    group frontend(cloud)[FRONTEND] in codelnpay
+    service frontendapp(server)[Frontend Server] in frontend
+    service disk3(disk)[Object Storage] in frontend
+
+    frontendapp:R -- L:disk3
+     
+    frontendapp:B -- T: server
+
+```
+
+[//]: # (![CodelnPay-Architechture-Diagram])
 ### Backend Repo Image
 ![backend-repo-image]
 
@@ -38,15 +59,10 @@ Use this email [info@codeln.com] above to contact us for further details.
 [![Product Name Screen Shot][product-screenshot]](https://pay.codeln.com)
 
 ### Built With
-
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* <a href="https://www.djangoproject.com"><img src="https://static.djangoproject.com/img/logos/django-logo-positive.png" height="40"></img></a>
-
 ```mermaid
 classDiagram
     class CodelnPay Frontend  {
-        - Vue
+        - VueJs
         - Vite
         - Axios
     }
