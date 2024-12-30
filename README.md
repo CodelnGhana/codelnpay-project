@@ -1,49 +1,34 @@
-## CodelnPay
+## <u>CodelnPay</u>
 
-### Note for SCF:
+### <u>Note for SCF:</u>
 
 Due to the nature of the data that CodelnPay handles, being sensitive data including but not limited to customer information, 
 financial records, or personal identifier information, the Codeln Organisation maintains private code repositories. 
 
 CodelnPay Frontend Code has been included in the project to demonstrate project development progress. 
 However the backend repo is shown  below.
-You can request access using the following email : philisiah@codeln.com.
+You can request access using the following email : <u>**philisiah@codeln.com**</u>.
 
-### CodelnPay Architechture
-```mermaid
-architecture-beta
-    group codelnpay(cloud)[CODELNPAY] 
-    group api(cloud)[API] in codelnpay
 
-    service db(database)[Database] in api
-    service disk1(disk)[Storage] in api
-    service server(server)[Server] in api
 
-    db:L -- R:server
-    disk1:T -- B:db
-    
 
-    group frontend(cloud)[FRONTEND] in codelnpay
-    service frontendapp(server)[Frontend Server] in frontend
-    service disk3(disk)[Object Storage] in frontend
-
-    frontendapp:R -- L:disk3
-     
-    frontendapp:B -- T: server
-
-```
-
-[//]: # (![CodelnPay-Architechture-Diagram])
-### Backend Repo Image
+### <u>Backend Repo Image  and Backend Collaboration History</u>
 ![backend-repo-image]
 
-Additionally, here are the links to the CodelnPay product.
+![backend-collab-image]
+
+### <u>Frontend Repo Image  and Collaboration History</u>
+![frontend-repo-image]
+
+![frontend-collab-image]
+
+#### Additionally, here are the links to the CodelnPay product.
 
 * [Codeln Pay](https://pay.codeln.com)
 
-Use this email [info@codeln.com] above to contact us for further details.
+Use this email <u>**[info@codeln.com]** </u>above to contact us for further details.
 
-## About The Project
+## <u>About The Project</u>
 
 #### Codeln Pay is a crypto payroll payment solution designed to facilitate cross-border transactions for businesses and remote workers.
 
@@ -58,7 +43,7 @@ Use this email [info@codeln.com] above to contact us for further details.
 
 [![Product Name Screen Shot][product-screenshot]](https://pay.codeln.com)
 
-### Built With
+### <u>Built With</u>
 ```mermaid
 classDiagram
     class CodelnPay Frontend  {
@@ -100,6 +85,9 @@ classDiagram
 [Django-url]:  https://www.djangoproject.com
 [CodelnPay-Architechture-Diagram]:  images/product_screenshot.png
 [backend-repo-image]: images/backend_repo_image.png
+[frontend-repo-image]: images/frontend-repo-image.png
+[backend-collab-image]: images/backend-collab-image.png
+[frontend-collab-image]: images/frontend-collab-image.png
 
 [product-screenshot]: images/product_screenshot.png
 
@@ -107,13 +95,13 @@ classDiagram
 
 <!-- CONTACT -->
 
-## Contact
+## <u>Contact</u>
 
 Codeln Team - [@Codeln_spaces](https://twitter.com/Codeln_spaces) - info@codeln.com
 
 <!-- NOTE -->
 
-### Note:
+### <u>Note:</u>
 
 CodelnPay handles sensitive data including but not limited to customer information, financial records, or personal
 details,
