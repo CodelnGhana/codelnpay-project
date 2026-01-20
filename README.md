@@ -45,7 +45,7 @@ Use this email <u>**[info@codeln.com]** </u>above to contact us for further deta
 
 ### Now Available on Mobile
 
-[![Product Name Screen Shot][mobile-screenshot]](https://play.google.com/store/apps/details)
+[![Product Name Screen Shot][mobile-screenshot]](https://play.google.com/store/apps/details?id=com.codeln.codelnpay)
 
 [//]: # (### <u>Built With</u>)
 
