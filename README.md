@@ -1,6 +1,6 @@
-## <u>CodelnPay</u>
+## <u>CodelnPay Project</u>
 
-### <u>Note for SCF:</u>
+### <u>Note:</u>
 
 Due to the nature of the data that CodelnPay handles, being sensitive data including but not limited to customer information, 
 financial records, or personal identifier information, the Codeln Organisation maintains private code repositories. 
@@ -24,7 +24,7 @@ You can request access using the following email : <u>**philisiah@codeln.com**</
 
 #### Additionally, here are the links to the CodelnPay product.
 
-* [Codeln Pay](https://pay.codeln.com)
+* [Codeln Pay](https://www.codelnpay.com)
 
 Use this email <u>**[info@codeln.com]** </u>above to contact us for further details.
 
@@ -41,28 +41,45 @@ Use this email <u>**[info@codeln.com]** </u>above to contact us for further deta
 <!-- ABOUT THE PROJECT -->
 
 
-[![Product Name Screen Shot][product-screenshot]](https://pay.codeln.com)
+[![Product Name Screen Shot][product-screenshot]](https://www.codelnpay.com)
 
-### <u>Built With</u>
-```mermaid
-classDiagram
-    class CodelnPay Frontend  {
-        - VueJs
-        - Vite
-        - Axios
-    }
+### Now Available on Mobile
 
-    class CodelnPay Backend {
-        - Django
-        - Postgresql
-        
-    }
+[![Product Name Screen Shot][mobile-screenshot]](https://play.google.com/store/apps/details)
 
-    CodelnPay Frontend "Uses" -- CodelnPay Backend 
-```
+[//]: # (### <u>Built With</u>)
+
+[//]: # (```mermaid)
+
+[//]: # (classDiagram)
+
+[//]: # (    class CodelnPay Frontend  {)
+
+[//]: # (        - VueJs)
+
+[//]: # (        - Vite)
+
+[//]: # (        - Axios)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (    class CodelnPay Backend {)
+
+[//]: # (        - Django)
+
+[//]: # (        - Postgresql)
+
+[//]: # (        )
+[//]: # (    })
+
+[//]: # ()
+[//]: # (    CodelnPay Frontend "Uses" -- CodelnPay Backend )
+
+[//]: # (```)
 ### Backed By
 
-* <a href="https://stellar.org/"><img src="images/stellar.png"></img></a>
+<a href="https://stellar.org/"><img src="images/stellar.png"></img></a>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 
@@ -90,6 +107,7 @@ classDiagram
 [frontend-collab-image]: images/frontend-collab-image.png
 
 [product-screenshot]: images/product_screenshot.png
+[mobile-screenshot]: images/mobile-screenshot.png
 
 
 
