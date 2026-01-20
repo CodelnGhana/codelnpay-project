@@ -1,15 +1,13 @@
-## <u>CodelnPay Project</u>
+## <u>CodeLnPay Project</u>
 
 ### <u>Note:</u>
 
-Due to the nature of the data that CodelnPay handles, being sensitive data including but not limited to customer information, 
-financial records, or personal identifier information, the Codeln Organisation maintains private code repositories. 
+Due to the nature of the data that CodeLnPay handles, being sensitive data including but not limited to customer information, 
+financial records, or personal identifier information, the CodeLn Organisation maintains private code repositories. 
 
-CodelnPay Frontend Code has been included in the project to demonstrate project development progress. 
-However the backend repo is shown  below.
-You can request access using the following email : <u>**philisiah@codeln.com**</u>.
-
-
+CodeLnPay Frontend, Backend and Mobile application code is not included in this project, 
+However project progress overtime has been shown below.
+##### You can request access using the following email : <u>**philisiah@codelnpay.com**</u>.
 
 
 ### <u>Backend Repo Image  and Backend Collaboration History</u>
@@ -26,7 +24,7 @@ You can request access using the following email : <u>**philisiah@codeln.com**</
 
 * [Codeln Pay](https://www.codelnpay.com)
 
-Use this email <u>**[info@codeln.com]** </u>above to contact us for further details.
+Use this email <u>**[info@codelnpay.com]** </u>above to contact us for further details.
 
 ## <u>About The Project</u>
 
@@ -117,7 +115,7 @@ Use this email <u>**[info@codeln.com]** </u>above to contact us for further deta
 
 ## <u>Contact</u>
 
-Codeln Team - [@Codeln_spaces](https://twitter.com/Codeln_spaces) - info@codeln.com
+CodeLnPay Team - [@Codeln_spaces](https://twitter.com/Codeln_spaces) - info@codelnpay.com
 
 <!-- NOTE -->
 
