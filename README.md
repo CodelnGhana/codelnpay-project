@@ -105,9 +105,9 @@ Use this email <u>**[info@codelnpay.com]** </u>above to contact us for further d
 [backend-collab-image]: images/backend-collab-image.png
 [frontend-collab-image]: images/frontend-collab-image.png
 
-[product-screenshot]: images/product_screenshot.png
+[product-screenshot]: images/product_screenshot.jpg
 [mobile-screenshot]: images/mobile-screenshot.png
-[mobile-screenshot2]: images/mobile-screenshot.jpeg
+[mobile-screenshot2]: images/mobile_screenshot_upd.jpeg
 
 
 
