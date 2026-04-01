@@ -110,7 +110,7 @@ sequenceDiagram
 
 ###### API Specification : Recovery Server A & B
 
-Recovery server A & B expose an identical interface for the CodeLnpay Mobile Clients.
+Recovery server A & B expose an identical interface for the CodeLnpay Mobile Client.
 
 1. Base Configuration
     - Protocol: HTTPS
