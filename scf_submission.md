@@ -123,7 +123,7 @@ Recovery server A & B expose an identical interface for the CodeLnpay Mobile Cli
    The user registers their recovery intent with the server.
 
    | Method | Endpoint                    | Description                                                              |
-                  |:-------|:----------------------------|:-------------------------------------------------------------------------|
+   |:-------|:----------------------------|:-------------------------------------------------------------------------|
    | POST   | /accounts/{address}/signers | Registers the server as a recovery signer for a specific Stellar address |
 
 3. Endpoint: POST /accounts/{address}/sign
@@ -131,7 +131,7 @@ Recovery server A & B expose an identical interface for the CodeLnpay Mobile Cli
    XDR) to rotate their keys.
 
    | Method | Endpoint                 | Description                                                   |
-                  |:-------|:-------------------------|:--------------------------------------------------------------|
+   |:-------|:-------------------------|:--------------------------------------------------------------|
    | POST   | /accounts/{address}/sign | Requests a signature from the AWS KMS-backed recovery server. |
 
 4. Server Logic (Server A & B)
@@ -275,7 +275,7 @@ sequenceDiagram
    CodeLnPay Backend will interact with the following vault functions.
 
    | Function    | Description                                                   |
-             |:------------|:--------------------------------------------------------------|
+   |:------------|:--------------------------------------------------------------|
    | deposit     | Mints shares to the user in exchange for underlying assets (USDC). |
    | withdraw    | Burns shares and returns the proportional amount of underlying assets (USDC). |
    | get_balance | Returns the user’s specific share balance and underlying value. |
