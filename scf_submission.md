@@ -8,8 +8,7 @@ We enable employers in the U.S., Canada, United Kingdom, and Europe to efficient
 contractors based anywhere in Africa.
 
 CodeLnPay solution is a full-featured a stellar wallet, allowing users to unlock the ability to receive USDC Stablecoin
-Salary
-Payments. With notable on-ramp and off-ramp integrations with stellar ecosystem partners like YellowCard,
+Salary Payments. With notable on-ramp and off-ramp integrations with stellar ecosystem partners like YellowCard,
 LinkIO and OnrampMoney.
 
 ### <u>SCF Integration Submission: CodeLnPay Yield Generation with DeFiIndex</u><br>
@@ -32,7 +31,7 @@ This submission seeks to address two implementations for CodeLnPay
 
 ##### Overview
 
-Implementing the SEP-30 standard, we allow users to regain access to their accounts using familiar identity providers (
+Implementing the SEP-30 standard, will allow users to regain access to their accounts using familiar identity providers (
 Email/SMS).
 
 ###### Flow & Logic<br>
@@ -98,8 +97,7 @@ sequenceDiagram
     - Server A (Primary): Managed by CodeLnPay. It validates the user's identity token and requests a signature from its
       dedicated AWS KMS key.
     - Server B (Backup): Acts as a redundant safety measure. In a "lost device" scenario, both Server A and Server B
-      sign a
-      transaction to rotate the user's master key to a new device.
+      sign a transaction to rotate the user's master key to a new device.
     - Hardware Security: All keys are stored in AWS KMS (ECC_ED25519). Keys are generated inside the HSM and can
       never be exported or viewed by anyone.
 3. Stellar Account Configuration
@@ -112,7 +110,7 @@ sequenceDiagram
 
 ###### API Specification : Recovery Server A & B
 
-Recovery server A & B expose an identical interface for the CodeLnpay Mobile Client.
+Recovery server A & B expose an identical interface for the CodeLnpay Mobile Clients.
 
 1. Base Configuration
     - Protocol: HTTPS
