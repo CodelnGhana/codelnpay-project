@@ -102,11 +102,11 @@ sequenceDiagram
       never be exported or viewed by anyone.
 3. Stellar Account Configuration
    Upon onboarding, the user's Stellar account is configured with specific weights:
-    - Master Key (User Device): Weight 20
-    - Recovery Signer A: Weight 10
-    - Recovery Signer B: Weight 10
-    - Thresholds: Low/Med/High = 20.
-    - The user can transact alone (20), but recovery requires both A + B (10 + 10) to meet the threshold.
+    - Master Key (User Device): Weight 10
+    - Recovery Signer A: Weight 5
+    - Recovery Signer B: Weight 5
+    - Thresholds: Low/Med/High = 10.
+    - The user can transact alone (10), but recovery requires both A + B (5 + 5) to meet the threshold.
 
 ###### API Specification : Recovery Server A & B
 
