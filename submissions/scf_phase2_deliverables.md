@@ -2,13 +2,21 @@
 
 ### Overview
 
-In this phase CodeLnPay Onboarding Infrastructure is upgraded to support automated recovery signer setup. 
-This removes the friction of manual seed phrase management by deploying a secure, multi-signature threshold matrix
-managed through independent recovery servers at registration.
-The diagrams below detail the end-to-end registration sequences for both onboarding models. 
-They outline the precise user interactions and background system actions required to transition 
-from a single-key local backup to a secure, identity-verified multi-signature threshold configuration. 
+In this phase, the CodeLnPay Onboarding Infrastructure is upgraded to natively support automated recovery signer setup,
+successfully transitioning the platform from a single-point-of-failure storage model to a decentralized recovery framework.
+This infrastructure overhaul completely removes the user-experience friction and operational risks associated with manual seed phrase management. 
+In its place, CodeLnPay deploys a secure, on-chain multi-signature threshold matrix that abstracts complexity away from the 
+user while enforcing strict security boundaries. 
+At the moment of registration, the CodeLnpay coordinates with the recovery servers to establish multi-party signing authorization.
+#### Core Architectural Enhancements:
+1. Decentralized Identity Anchoring: Rather than forcing users to secure physical paper backups, account recovery capability is bound securely to verified, out-of-band identity protocols (Email and SMS One-Time Passwords) processed directly by isolated recovery servers. 
+2. Algorithmic Threshold Enforcement: The system automatically configures the Stellar account's signing matrix during initialization. By tuning  operation weights (assigning a dominant weight to the local device key and secondary weights to individual recovery servers), the local device handles day-to-day transaction signing seamlessly on its own. 
+3. Collusion-Resistant Recovery: The threshold configuration ensures that no single recovery server—nor CodeLnPay itself—can unilaterally recovery an account key. A quorum of independent signatures is strictly required only during the master key replacement flow.
 
+The comparative diagrams below detail the end-to-end registration sequences for both onboarding models. 
+They map out the precise user interface interactions alongside the behind-the-scenes system actions that were required 
+to transition from a legacy, single-key local backup to CodeLnPay's secure, 
+identity-verified multi-signature threshold configuration.
 #### Diagram 1: Onboarding with Seed Phrase Generation
 ```mermaid
 graph TD
@@ -35,8 +43,8 @@ graph TD
     Verification -->|No: Error Notification| SCR5
     Verification -->|Yes| SYS3[System: Derive Public Stellar Address]
     
-    SYS3 --> SYS4[System: Encrypt & Store Seed in App]
-    SYS4 --> SCR6[Screen 6: Dashboard Activation Dashboard]
+    SYS3 --> SYS4[System: Encrypt & Store Seed off App]
+    SYS4 --> SCR6[Screen 6: Dashboard Activation ]
     SCR6 --> End([Onboarding Complete])
 
     %% Assign Styles
@@ -69,9 +77,9 @@ graph TD
     
     SYS2 --> SYS3[System: Generate Device Master Key locally]
     SYS3 --> SYS4[System: Build Multi-Sig Threshold Transaction]
-    SYS4 --> SYS5[System: Submit Config to Stellar Network]
+    SYS4 --> SYS5[System: Submit Transaction to Stellar Network]
     
-    SYS5 --> SCR5[Screen 5: Dashboard Activation Dashboard]
+    SYS5 --> SCR5[Screen 5: Dashboard Activation]
     SCR5 --> End([Onboarding Complete])
 
     %% Assign Styles
