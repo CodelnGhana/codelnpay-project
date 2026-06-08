@@ -1,0 +1,85 @@
+## Phase 2: UX Recovery Process
+
+### Overview
+
+In this phase CodeLnPay Onboarding Infrastructure is upgraded to support automated recovery signer setup. 
+This removes the friction of manual seed phrase management by deploying a secure, multi-signature threshold matrix
+managed through independent recovery servers at registration.
+The diagrams below detail the end-to-end registration sequences for both onboarding models. 
+They outline the precise user interactions and background system actions required to transition 
+from a single-key local backup to a secure, identity-verified multi-signature threshold configuration. 
+
+#### Diagram 1: Onboarding with Seed Phrase Generation
+```mermaid
+graph TD
+    %% Styling Configuration
+    classDef startEnd fill:#1A1F2C,stroke:#4F46E5,stroke-width:2px,color:#fff;
+    classDef process fill:#2E3440,stroke:#D8DEE9,stroke-width:1px,color:#ECEFF4;
+    classDef warning fill:#3B4252,stroke:#EBCB8B,stroke-width:2px,color:#EBCB8B;
+    classDef system fill:#242933,stroke:#81A1C1,stroke-width:1px,color:#81A1C1;
+
+    %% Flow Steps
+    Start([User Opens App]) --> SCR1[Screen 1: Welcome Splash]
+    SCR1 -->|Clicks 'Create New Wallet'| SCR2[Screen 2: App-Level Auth Setup]
+    
+    SCR2 -->|Enters 4-Digit PIN| SYS1[System: Register PIN]
+    SYS1 --> SCR3[Screen 3: Security Acknowledgement]
+    
+    SCR3 -->|Accepts Mandatory Checkboxes| SYS2[System: Generate Cryptographic Seed Phrase]
+    SYS2 --> SCR4[Screen 4: Reveal Seed Phrase]
+    
+    SCR4 -->|Taps 'I Have Written It Down'| SCR5[Screen 5: Mandatory Phrase Verification]
+    
+    SCR5 -->|Selects Word Chips in Order| Verification{Is Phrase Correct?}
+    
+    Verification -->|No: Error Notification| SCR5
+    Verification -->|Yes| SYS3[System: Derive Public Stellar Address]
+    
+    SYS3 --> SYS4[System: Encrypt & Store Seed in App]
+    SYS4 --> SCR6[Screen 6: Dashboard Activation Dashboard]
+    SCR6 --> End([Onboarding Complete])
+
+    %% Assign Styles
+    class Start,End startEnd;
+    class SCR1,SCR2,SCR4,SCR5,SCR6 process;
+    class SCR3 warning;
+    class SYS1,SYS2,SYS3,SYS4,Verification system;
+```
+
+#### Diagram 2: Onboarding with SEP30 Recovery Server SetUp
+
+
+```mermaid
+graph TD
+    %% Styling Configuration
+    classDef startEnd fill:#1A1F2C,stroke:#4F46E5,stroke-width:2px,color:#fff;
+    classDef process fill:#2E3440,stroke:#D8DEE9,stroke-width:1px,color:#ECEFF4;
+    classDef auth fill:#3B4252,stroke:#EBCB8B,stroke-width:2px,color:#EBCB8B;
+    classDef system fill:#242933,stroke:#81A1C1,stroke-width:1px,color:#81A1C1;
+
+    %% Flow Steps
+    Start([User Opens App]) --> SCR1[Screen 1: Welcome Splash]
+    SCR1 -->|Clicks 'Create Wallet'| SCR2[Screen 2: Account Identity Inputs]
+    
+    SCR2 -->|Enters Email & Phone| SCR3[Screen 3: Server 1 Auth - Email]
+    SCR3 -->|Inputs Email OTP Code| SYS1[Server 1: Verify & Return Signer Key 1]
+    
+    SYS1 --> SCR4[Screen 4: Server 2 Auth - SMS]
+    SCR4 -->|Inputs SMS OTP Code| SYS2[Server 2: Verify & Return Signer Key 2]
+    
+    SYS2 --> SYS3[System: Generate Device Master Key locally]
+    SYS3 --> SYS4[System: Build Multi-Sig Threshold Transaction]
+    SYS4 --> SYS5[System: Submit Config to Stellar Network]
+    
+    SYS5 --> SCR5[Screen 5: Dashboard Activation Dashboard]
+    SCR5 --> End([Onboarding Complete])
+
+    %% Assign Styles
+    class Start,End startEnd;
+    class SCR1,SCR2,SCR5 process;
+    class SCR3,SCR4 auth;
+    class SYS1,SYS2,SYS3,SYS4,SYS5 system;
+```
+#### Wallet SetUp and Recovery Demo
+
+[![Watch the video](https://img.youtube.com/vi/2Mm_pB9xoW4/maxresdefault.jpg)]( https://youtu.be/2Mm_pB9xoW4)
