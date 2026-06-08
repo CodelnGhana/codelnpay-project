@@ -88,6 +88,39 @@ graph TD
     class SCR3,SCR4 auth;
     class SYS1,SYS2,SYS3,SYS4,SYS5 system;
 ```
-#### Wallet SetUp and Recovery Demo
+#### Diagram 3: Wallet Recovery UX Flow for a New Device Scenario
+```mermaid
+graph TD
+    %% Styling Configuration
+    classDef startEnd fill:#1A1F2C,stroke:#4F46E5,stroke-width:2px,color:#fff;
+    classDef process fill:#2E3440,stroke:#D8DEE9,stroke-width:1px,color:#ECEFF4;
+    classDef auth fill:#3B4252,stroke:#EBCB8B,stroke-width:2px,color:#EBCB8B;
+    classDef system fill:#242933,stroke:#81A1C1,stroke-width:1px,color:#81A1C1;
+
+    %% Flow Steps
+    Start([User Installs App on New Device]) --> SCR1[Screen 1: Welcome Splash]
+    SCR1 -->|Clicks 'Recover Existing Wallet'| SCR2[Screen 2: Identity Lookup]
+    
+    SCR2 -->|Enters Registered Email & Phone| SYS1[System: Generate New Device Key pair locally]
+    SYS1 --> SCR3[Screen 3: Server 1 Challenge - Email]
+    
+    SCR3 -->|Inputs Email OTP Code| SYS2[Server 1: Verify Identity & Return Signature 1]
+    SYS2 --> SCR4[Screen 4: Server 2 Challenge - SMS]
+    
+    SCR4 -->|Inputs SMS OTP Code| SYS3[Server 2: Verify Identity & Return Signature 2]
+    
+    SYS3 --> SYS4[System: Combine Signatures & Build Key-Replacement Tx]
+    SYS4 --> SYS5[System: Submit Transaction to Stellar Network]
+    
+    SYS5 --> SCR5[Screen 5: Recovery Success Dashboard]
+    SCR5 --> End([Wallet Fully Recovered])
+
+    %% Assign Styles
+    class Start,End startEnd;
+    class SCR1,SCR2,SCR5 process;
+    class SCR3,SCR4 auth;
+    class SYS1,SYS2,SYS3,SYS4,SYS5 system;
+```
+### Wallet SetUp and Recovery Demo
 
 [![Watch the video](https://img.youtube.com/vi/2Mm_pB9xoW4/maxresdefault.jpg)]( https://youtu.be/2Mm_pB9xoW4)
