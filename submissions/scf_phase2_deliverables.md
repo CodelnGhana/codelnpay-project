@@ -34,7 +34,7 @@ At the moment of registration, the CodeLnpay coordinates with the recovery serve
 ![setup_recovery]
 6. Add email: stellartest@cdln.com and any phone number to proceed
 ![enter_email]
-7. Input your **‘Secret Key’** and **‘Activate Recovery’**
+7. Input your **‘Secret Key’** and click **‘Activate Recovery’**
 ![secret_key2]
 
 8. Go to dashboard and click **‘Manage Wallets'** and then **'Recover Access'**
