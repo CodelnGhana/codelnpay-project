@@ -15,7 +15,7 @@ At the moment of registration, the CodeLnpay coordinates with the recovery serve
 
 
 #### How to test (Staging Only: USE OTP, EMAIL and VERIFICATION CODE AS 123456)
-Access our staging using the [Link](https://pearlmine-94bec.web.app/Wallet)
+### Access our staging using the [Link](https://pearlmine-94bec.web.app/Wallet)
 - Email : stellartest@cdln.com
 - Password : biwrupgozxob8mojTy
 - OTP : 123456
@@ -37,7 +37,7 @@ Access our staging using the [Link](https://pearlmine-94bec.web.app/Wallet)
 7. Input your **‘Secret Key’** and **‘Activate Recovery’**
 ![secret_key2]
 
-8. Go to dashboard and click **‘Manage Wallet'** and then **'Recover Access'**
+8. Go to dashboard and click **‘Manage Wallets'** and then **'Recover Access'**
 ![recover_access]
 9. Enter code: **‘123456’** for Email & SMS
 ![enter_otp]
