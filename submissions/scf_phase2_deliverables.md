@@ -17,26 +17,21 @@ Included in this doc are diagrams that detail the end-to-end registration sequen
 They map out the precise user interface interactions alongside the behind-the-scenes system actions that were required 
 to transition from a legacy, single-key local backup to CodeLnPay's secure, 
 identity-verified multi-signature threshold configuration.
-<br/>
-<br/>
+
 #### How to test (Staging Only: USE OTP, EMAIL and VERIFICATION CODE AS 123456)
 1. Navigate to [CodelnPay Staging Manage Wallet ](https://pearlmine-94bec.web.app/Wallet)
 - User : stellartest@cdln.com
 - Password : biwrupgozxob8mojTy
 - OTP : 123456
-</br>
-</br>
+
 2. Create New Wallet
 ![manage-wallet-image]
-</br>
-</br>
+
 3. SetUp recovery
-![recover-wallet-image](images/recover_wallet.png)
-</br>
-</br>
+![recover-wallet-image]
+
 4. NOTE: Recover Wallet - USE 123456 for both EMAIL and SMS CODE [Staging Only]
-</br>
-</br>
+
 #### Diagram 1: Onboarding with Seed Phrase Generation
 ```mermaid
 graph TD
