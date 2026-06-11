@@ -14,7 +14,7 @@ At the moment of registration, the CodeLnpay coordinates with the recovery serve
 3. Collusion-Resistant Recovery: The threshold configuration ensures that no single recovery server - nor CodeLnPay itself - can unilaterally recovery an account key. A quorum of independent signatures is strictly required during the master key replacement flow.
 
 
-#### How to test (Staging Only: USE OTP, EMAIL and VERIFICATION CODE AS 123456)
+### How to test (Staging Only: USE OTP, EMAIL and VERIFICATION CODE AS 123456)
 ### Access our staging using the [Link](https://pearlmine-94bec.web.app/Wallet)
 - Email : stellartest@cdln.com
 - Password : biwrupgozxob8mojTy
