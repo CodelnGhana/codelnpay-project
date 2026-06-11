@@ -7,7 +7,7 @@ successfully transitioning the platform from a single-point-of-failure storage m
 This infrastructure overhaul completely removes the user-experience friction and operational risks associated with manual seed phrase management. 
 In its place, CodeLnPay deploys a secure, on-chain multi-signature threshold matrix that abstracts complexity away from the 
 user while enforcing strict security boundaries. 
-At the moment of registration, the CodeLnpay coordinates with the recovery servers to establish multi-party signing authorization.
+At the moment of registration, the CodeLnPay coordinates with the recovery servers to establish multi-party signing authorization.
 #### Core Architectural Enhancements:
 1. Decentralized Identity Anchoring: Rather than forcing users to secure physical paper backups, account recovery capability is bound securely to verified, out-of-band identity protocols (Email and SMS One-Time Passwords) processed directly by isolated recovery servers. 
 2. Algorithmic Threshold Enforcement: The system automatically configures the Stellar account's signing matrix during initialization. By tuning  operation weights (assigning a dominant weight to the local device key and secondary weights to individual recovery servers), the local device handles day-to-day transaction signing seamlessly on its own. 
