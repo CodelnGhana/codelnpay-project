@@ -1,4 +1,4 @@
-## Phase 2: UX Recovery Process
+## Phase 2: Recovery Process UX
 
 ### Overview
 
