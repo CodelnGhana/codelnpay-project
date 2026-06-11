@@ -13,10 +13,30 @@ At the moment of registration, the CodeLnpay coordinates with the recovery serve
 2. Algorithmic Threshold Enforcement: The system automatically configures the Stellar account's signing matrix during initialization. By tuning  operation weights (assigning a dominant weight to the local device key and secondary weights to individual recovery servers), the local device handles day-to-day transaction signing seamlessly on its own. 
 3. Collusion-Resistant Recovery: The threshold configuration ensures that no single recovery server—nor CodeLnPay itself—can unilaterally recovery an account key. A quorum of independent signatures is strictly required only during the master key replacement flow.
 
-The comparative diagrams below detail the end-to-end registration sequences for both onboarding models. 
+Included in this doc are diagrams that detail the end-to-end registration sequences for both onboarding models. 
 They map out the precise user interface interactions alongside the behind-the-scenes system actions that were required 
 to transition from a legacy, single-key local backup to CodeLnPay's secure, 
 identity-verified multi-signature threshold configuration.
+<br/>
+<br/>
+#### How to test (Staging Only: USE OTP, EMAIL and VERIFICATION CODE AS 123456)
+1. Navigate to [CodelnPay Staging Manage Wallet ](https://pearlmine-94bec.web.app/Wallet)
+- User : stellartest@cdln.com
+- Password : biwrupgozxob8mojTy
+- OTP : 123456
+</br>
+</br>
+2. Create New Wallet
+![manage-wallet-image]
+</br>
+</br>
+3. SetUp recovery
+![recover-wallet-image](images/recover_wallet.png)
+</br>
+</br>
+4. NOTE: Recover Wallet - USE 123456 for both EMAIL and SMS CODE [Staging Only]
+</br>
+</br>
 #### Diagram 1: Onboarding with Seed Phrase Generation
 ```mermaid
 graph TD
@@ -124,3 +144,7 @@ graph TD
 ### Wallet SetUp and Recovery Demo
 
 [![Watch the video](https://img.youtube.com/vi/2Mm_pB9xoW4/maxresdefault.jpg)]( https://youtu.be/2Mm_pB9xoW4)
+
+
+[manage-wallet-image]: images/manage_wallets.png
+[recover-wallet-image]: images/recover_wallet.png
