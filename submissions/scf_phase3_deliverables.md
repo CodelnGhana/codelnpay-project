@@ -1,10 +1,10 @@
-## Phase 2: DEFINDEX INTEGRATION
+## Phase 3: DEFINDEX INTEGRATION & MAINNET DEPLOYMENT
 
 ### Overview
 In this phase, we complete the DeFindex integration and deployed the recovery process in production
 
 ### How to Test
-#### CodeLn Pay: Defindex Integration
+#### 1. CodeLn Pay: Defindex Integration
 #### Requirements
 - Wallet Secret Key 
 - USDC balance in wallet
@@ -19,7 +19,7 @@ In this phase, we complete the DeFindex integration and deployed the recovery pr
 5. Enter **Wallet Secret Key** to authorize withdrawal
 ![authorize_withdrawal]
 
-#### CodeLn Pay: Wallet Recovery
+#### 2. CodeLn Pay: Wallet Recovery
 #### Requirements
 - An ‘Employee’ account on CodeLnPay
 - Wallet Secret Key & Registered Email Access
