@@ -1,7 +1,7 @@
 ## Phase 3: DEFINDEX INTEGRATION & MAINNET DEPLOYMENT
 
 ### Overview
-In this phase, we complete the DeFindex integration and deployed the recovery process in production
+In this phase, we complete thee DeFindex Integration and deploy the wallet recovery process to mainnet.
 
 ### How to Test
 #### 1. CodeLn Pay: Defindex Integration
