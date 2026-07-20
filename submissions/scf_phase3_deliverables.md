@@ -51,7 +51,7 @@ In this phase, we complete thee DeFindex Integration and deploy the wallet recov
 ![authorize_withdrawal]
 
 
-### Demo Video:
+#### 3. Demo Video:
 [![][thumbnail]](https://youtu.be/ycd20OjVNaQ)
 
 
