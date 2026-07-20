@@ -6,7 +6,7 @@ In this phase, we complete thee DeFindex Integration and deploy the wallet recov
 ### How to Test
 #### 1. CodeLn Pay: Defindex Integration
 #### Requirements
-- An ‘Employee’ account on CodeLnPay
+- An **'Employee'** account on **[CodeLnPay](https://www.codelnpay.com)**
 - Wallet Secret Key 
 - USDC balance in wallet
 1. Go to the **Invest** Button to get started
