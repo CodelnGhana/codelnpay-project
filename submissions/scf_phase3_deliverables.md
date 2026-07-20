@@ -22,7 +22,7 @@ In this phase, we complete thee DeFindex Integration and deploy the wallet recov
 
 #### 2. CodeLn Pay: Wallet Recovery
 #### Requirements
-- An ‘Employee’ account on CodeLnPay
+- An **'Employee'** account on **[CodeLnPay](https://www.codelnpay.com)**
 - Wallet Secret Key & Registered Email Access
 - Active Mobile Phone Number
 
