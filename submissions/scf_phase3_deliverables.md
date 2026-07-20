@@ -4,23 +4,7 @@
 In this phase, we complete thee DeFindex Integration and deploy the wallet recovery process to mainnet.
 
 ### How to Test
-#### 1. CodeLn Pay: Defindex Integration
-#### Requirements
-- An **'Employee'** account on **[CodeLnPay](https://www.codelnpay.com)**
-- Wallet Secret Key 
-- USDC balance in wallet
-1. Go to the **Invest** Button to get started
-![access_invest]
-2. Manage Your investments: Enter your desired USDC amount and Click **Deposit Assets**. 
-![manage_investments]
-3. Enter **Wallet Secret Key** to authorize deposit.
-![authorize_deposit]
-4. To withdraw invested USDC click **Withdraw Assets** .
-![manage_investments2]
-5. Enter **Wallet Secret Key** to authorize withdrawal
-![authorize_withdrawal]
-
-#### 2. CodeLn Pay: Wallet Recovery
+#### 1. CodeLn Pay: Wallet Recovery
 #### Requirements
 - An **'Employee'** account on **[CodeLnPay](https://www.codelnpay.com)**
 - Wallet Secret Key & Registered Email Access
@@ -49,6 +33,23 @@ In this phase, we complete thee DeFindex Integration and deploy the wallet recov
 ![enter_otp]
 10. Copy your new **‘Secret Key’**, check the checkbox and then click **‘Access My Wallet’**
 ![recover_wallet]
+
+#### 2. CodeLn Pay: Defindex Integration
+#### Requirements
+- An **'Employee'** account on **[CodeLnPay](https://www.codelnpay.com)**
+- Wallet Secret Key 
+- USDC balance in wallet
+1. Go to the **Invest** Button to get started
+![access_invest]
+2. Manage Your investments: Enter your desired USDC amount and Click **Deposit Assets**. 
+![manage_investments]
+3. Enter **Wallet Secret Key** to authorize deposit.
+![authorize_deposit]
+4. To withdraw invested USDC click **Withdraw Assets** .
+![manage_investments2]
+5. Enter **Wallet Secret Key** to authorize withdrawal
+![authorize_withdrawal]
+
 
 ### Demo Video:
 [![][thumbnail]](https://youtu.be/ycd20OjVNaQ)
